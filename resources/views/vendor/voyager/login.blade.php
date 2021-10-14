@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ voyager_asset('css/app.css') }}">
     <style>
         body {
-            background-image:url('{{ Voyager::image( Voyager::setting("admin.bg_image"), voyager_asset("images/GoMobile.jpg") ) }}');
+            background-image:url('{{ Voyager::image( Voyager::setting("admin.bg_image"), voyager_asset("images/bg.jpg") ) }}');
             background-color: {{ Voyager::setting("admin.bg_color", "#FFFFFF" ) }};
         }
         .login-sidebar{
@@ -47,7 +47,7 @@
                         <img class="img-responsive pull-left logo hidden-xs animated fadeIn" src="{{ Voyager::image($admin_logo_img) }}" alt="Logo Icon">
                         @endif
                         <div class="copy animated fadeIn">
-                            <h1>{{ Voyager::setting('admin.title', 'GoMobile') }}</h1>
+                            <h1>{{ Voyager::setting('admin.title', 'Voyager') }}</h1>
                             <p>{{ Voyager::setting('admin.description', __('voyager.login.welcome')) }}</p>
                         </div>
                     </div> <!-- .logo-title-container -->
@@ -86,16 +86,7 @@
 
               <div style="clear:both"></div>
 
-
-              <div style="margin-top: 10px;">
-                <div><strong>Email: </strong>adminweb@adminweb.com</div>
-                <div><strong>Password: </strong>password</div>
-              </div>
-
-              <div style="margin-top: 10px;"><strong>Note: </strong>A lot of the functionality for this demo has been disabled: For example, deleting data and browsing/editing users and roles. If you would like full access, install it locally with the instructions found on the GitHub Repo.</div>
-
-              <div style="margin-top: 10px;">A daily CRON job is scheduled at midnight to reset all the dummy data to a default state.</div>
-
+              
               @if(!$errors->isEmpty())
               <div class="alert alert-red">
                 <ul class="list-unstyled">
