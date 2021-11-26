@@ -108,7 +108,7 @@
 
                 </form>
 
-                @if ($paypalToken)
+                @if (false)
                     <div class="mt-32">or</div>
                     <div class="mt-32">
                         <h2>Pay with PayPal</h2>

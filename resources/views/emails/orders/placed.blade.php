@@ -28,5 +28,5 @@ Go to Website
 Thank you again for choosing us.
 
 Regards,<br>
-{{ config('app.name') }}
+GoMobile
 @endcomponent
